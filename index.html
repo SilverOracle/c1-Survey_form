@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">My first Survey Form</h1>
+      <p id="description">It's my first one, I swear...</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+      <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="15" max="100" class="form-control" placeholder="Enter your Age">
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="form-group">
+          <p>What's your preferable activity?</p>
+          <select id="dropdown" name="activity" class="form-control" required="">
+            <option disabled="" selected="" value="">Select preferable activity</option>
+            <option value="camping">Camping</option>
+            <option value="reading">Reading</option>
+            <option value="cycling">Cycling</option>
+            <option value="hentai">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+<div class="form-group">
+          <p>
+            Where would you like to go?
+          </p>
+
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox inline">Beach</label>
+          <label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox inline">Mountains</label>
+          <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox inline">Stay at home :|</label>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend it to a friend?</p>
+          <label>
+            <input name="user-recommend" value="yes" type="radio" class="input-radio inline" checked="">Yes</label>
+          <label>
+            <input name="user-recommend" value="no" type="radio" class="input-radio inline">No</label>
+          <label><input name="user-recommend" value="not_sure" type="radio" class="input-radio inline">Not sure</label>
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+        </fieldset>
+    </form>
+  </div>
+</body>
